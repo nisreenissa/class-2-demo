@@ -187,47 +187,50 @@ else if (UserInput < travels) {
 
 //Q1 
 
-var q7 = ['nada','rawan','yasmin','raya'];
-var guess;
-var flag = false;
-var counter = 0;
-for(var i = 0 ; i < 6; i++){
-   guess = prompt('whos my fav friend');
-   for(var j = 0; q7.length; j++){
-       if(guess === q7[j]){
-           alert('correct answer');
-           flag = true;
-           break;
-       }else{
-           guess = prompt('false try again');
-           counter++;
-           if(counter === 6){
-               alert('herea are my fav friends '+q7)
-               break;
-           }
-       }
-   }
-   if(flag === true){
-       break;
-   }
+// var q7 = ['nada','rawan','yasmin','raya'];
+// var guess;
+// var flag = false;
+// var counter = 0;
+// for(var i = 0 ; i < 6; i++){
+//    guess = prompt('whos my fav friend');
+//    for(var j = 0; q7.length; j++){
+//        if(guess === q7[j]){
+//            alert('correct answer');
+//            flag = true;
+//            break;
+//        }else{
+//            guess = prompt('false try again');
+//            counter++;
+//            if(counter === 6){
+//                alert('herea are my fav friends '+q7)
+//                break;
+//            }
+//        }
+//    }
+//    if(flag === true){
+//        break;
+//    }
 
     // i will ask the user each time and i will loop through the array
     
 
-}
-// var Q7 =['nada','rawan','yasmin','raya'];
-// for (var c = 6 ; c > 0 ; c--){
-//     for(var Index=0 ; Index <4;Index++){
-//         var UserQ7=prompt('guess one of my favourite firends');
+
+var Q7 =['nada','rawan','yasmin','raya'];
+for (var c = 6 ; c >= 1 ; c--){
+    for(var Index=0 ; Index <=3 ;Index++){
+        var UserQ7=prompt('guess one of my favourite firends');
 
 
-//     if(UserQ7.toLowerCase()===Q7[Index]){
-//     alert('this is a correct answer');
-//     //score = score + 1 ;
+    if(UserQ7.toLowerCase()===Q7[Index]){
+    alert('this is a correct answer');
+    score = score + 1 ;
     
-//     }
-//     else{ alert('that is incorrect');}
-//     }}
+    }
+    else{ alert('that is incorrect');
+}
+    }}
+
+    alert('your score is'+score);
 
 
 
