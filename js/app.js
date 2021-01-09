@@ -238,9 +238,9 @@
 //     alert('your score is'+score);
 
 // lab4
+var score = 0;
 
-function question1() {
-    Var score = 0;
+function question1(){
     var myAge = 27;
     var attempts = 0;
     while (attempts < 4) {
@@ -260,6 +260,7 @@ function question1() {
             alert('Too low!');
         }
     }
+}
     question1();
 
     function question2() {
@@ -387,36 +388,39 @@ function question1() {
                 }
             }
         }
+
         question6();
 
     
     
-function question7{
-        var Q7 = ['nada', 'rawan', 'yasmin', 'raya'];
-        var UserQ7 = prompt('guess one of my favourite firends');
-        
-        
-        for (var c = 0; c < 5; c++) {
-            for (var Index = 0; Index < Q7.length; Index++) {
-        
-        
-                if (UserQ7.toLowerCase() === Q7[Index]) {
-                    alert('this is a correct answer');
-                    //     score = score + 1 ;
-                    c = 5;
-                    break;
-                }
-        
-            }
-             if(c==5){
-                 break;
-             }
-             UserQ7 = prompt('try again');
-        
-        }
-        
-            alert('your score is'+score);
-    }
-        question7();
+function question7(){
 
+var Q7 = ['nada', 'rawan', 'yasmin', 'raya'];
+var UserQ7 = prompt('guess one of my favourite firends');
+
+
+for (var c = 0; c < 5; c++) {
+    for (var Index = 0; Index < Q7.length; Index++) {
+
+
+        if (UserQ7.toLowerCase() === Q7[Index]) {
+            alert('this is a correct answer');
+             score = score + 1 ;
+            c = 5;
+            break;
+        }
+
+    }
+     if(c==5){
+         break;
+     }
+     UserQ7 = prompt('try again');
+
+}
+        
+}
+
+    question7();
+
+    alert('your score is'+score);
 
